@@ -1,0 +1,27 @@
+.control::after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  height: 100%;
+  background-color: color-mix(in oklab, var(--color-gray-500) 75%, transparent);
+  border-radius: var(--radius-md);
+}
+
+.control.control--active::after {
+  animation: 3s linear 0s forwards history-time;
+}
+
+.control.control--complete::after {
+  width: 100%;
+}
+
+@keyframes history-time {
+  from {
+    width: 0%;
+  }
+
+  to {
+    width: 100%;
+  }
+}
