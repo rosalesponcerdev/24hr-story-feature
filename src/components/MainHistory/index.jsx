@@ -71,7 +71,7 @@ const MainHistory = ({ items }) => {
         <img
           src={selected.data.img}
           alt={selected.text}
-          className="absolute h-11/12 top-1/2 left-1/2 -translate-1/2 shadow-[0px_0px_8px_1px_rgba(0,0,0,.25)] max-w-11/12 object-contain"
+          className="absolute h-11/12 top-1/2 left-1/2 -translate-1/2 drop-shadow-[2px_4px_6px_rgba(0,0,0,.25)] max-w-11/12 object-contain"
         />
 
         <button
